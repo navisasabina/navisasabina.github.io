@@ -1,0 +1,16 @@
+---
+import Flower from './Flower.astro';
+import { linkedinPath, githubPath } from './Icons';
+import { site } from '../../data/site';
+---
+<header id="top" class="wrap" style="padding-top: 88px; padding-bottom: 64px; text-align: center; position: relative">
+<Flower class="float" size={44} petal="var(--pink2)" center="var(--accent)" style="position: absolute; left: 8%; top: 120px" />
+<Flower class="float2" size={30} petal="var(--mint)" center="var(--mintInk)" style="position: absolute; right: 10%; top: 230px" />
+<p style="margin: 0 0 12px; font-family: 'Instrument Serif', serif; font-style: italic; font-size: 30px; color: var(--accent)">Hey! I'm Sasha <span class="wiggle" aria-hidden="true">✿</span></p>
+<h1 style="margin: 0 auto; max-width: 980px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(48px, 9vw, 112px); line-height: 0.95; letter-spacing: -0.04em; text-wrap: balance">{site.name}.</h1>
+<div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px">
+<a href={site.cvUrl} target="_blank" rel="noopener" style="text-decoration: none; background: var(--inv); color: var(--onInv); border-radius: 999px; padding: 14px 24px; font-weight: 600; font-size: 15px">Download CV</a>
+<a href={site.linkedin} aria-label="LinkedIn profile" style="width: 50px; height: 50px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line2); display: inline-flex; align-items: center; justify-content: center; color: var(--ink)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={linkedinPath}></path></svg></a>
+<a href={site.github} aria-label="GitHub repositories" style="width: 50px; height: 50px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line2); display: inline-flex; align-items: center; justify-content: center; color: var(--ink)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={githubPath}></path></svg></a>
+</div>
+</header>

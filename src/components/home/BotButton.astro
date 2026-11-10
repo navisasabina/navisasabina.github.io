@@ -1,0 +1,8 @@
+---
+import BotIcon from './BotIcon.astro';
+// Floating "Ask Sasha's Bot" button at the bottom-right.
+---
+<a href="#contact" style="position: fixed; right: 20px; bottom: 20px; z-index: 30; text-decoration: none; display: flex; align-items: center; gap: 10px; background: var(--inv); color: var(--onInv); border-radius: 999px; padding: 10px 18px 10px 10px; box-shadow: 0 16px 32px -16px var(--shadow); font-size: 14px; font-weight: 600; min-height: 52px">
+<span aria-hidden="true" style="width: 32px; height: 32px; border-radius: 999px; background: #E3B7BC; display: flex; align-items: center; justify-content: center"><BotIcon size={18} /></span>
+<span class="botlabel">Ask Sasha's Bot</span>
+</a>

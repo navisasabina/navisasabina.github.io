@@ -1,0 +1,9 @@
+---
+import { marquee } from '../../data/skills';
+// The list is rendered twice so the scroll animation loops seamlessly.
+---
+<div aria-hidden="true" style="overflow: hidden; border-top: 1px solid var(--line2); border-bottom: 1px solid var(--line2); background: var(--surface); margin-bottom: 72px; padding: 18px 0">
+<div class="marquee" style="gap: 40px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; white-space: nowrap; color: var(--ink)">
+{[0, 1].map(() => marquee.map((s) => <><span>{s.label}</span><span style={`color: ${s.color}`}>✿</span></>))}
+</div>
+</div>

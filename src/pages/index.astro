@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/home/Navbar.astro';
+import Hero from '../components/home/Hero.astro';
+import Marquee from '../components/home/Marquee.astro';
+import About from '../components/home/About.astro';
+import Logbook from '../components/home/Logbook.astro';
+import Work from '../components/home/Work.astro';
+import Certificates from '../components/home/Certificates.astro';
+import Contact from '../components/home/Contact.astro';
+import Footer from '../components/home/Footer.astro';
+import BotButton from '../components/home/BotButton.astro';
+import '../styles/home.css';
+---
+<BaseLayout title="Sasha · Portfolio" handwriting>
+<div class="root" style="font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; padding-bottom: 110px">
+<Navbar />
+<Hero />
+<Marquee />
+<About />
+<Logbook />
+<Work />
+<Certificates />
+<Contact />
+<Footer />
+</div>
+<BotButton slot="after-dial" />
+</BaseLayout>
+
+<script>
+import '../scripts/home.js';
+</script>
