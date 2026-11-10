@@ -2,7 +2,7 @@
 
 Personal portfolio of **Navisa Ersa Sabina**: IT intern, UI/UX and business analysis.
 
-🔗 **Live:** https://navisasabina.github.io/navisasabina.portofolio/
+🔗 **Live:** https://navisasabina.github.io/
 
 Built with [Astro](https://astro.build), plain CSS and vanilla JavaScript. Deployed automatically to GitHub Pages with GitHub Actions.
 
@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:4321/navisasabina.portofolio/
+Then open http://localhost:4321/
 
 | Command | What it does |
 |---|---|
